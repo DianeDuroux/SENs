@@ -1,0 +1,1 @@
+gene1,gene2,SNP2,SNP1,Zscore,ZP
