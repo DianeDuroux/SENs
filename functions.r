@@ -6,7 +6,7 @@ select_significant_pairs <- function(
     p_cutoff         = 0.05,   # for mbmdr, casmap, antEpiSeeker
     rel_cutoff       = 0.7,    # for NNweights & LightGBM (as prop of max)
     epiGTBN_min      = 1,      # for epiGTBN (V1 > epiGTBN_min)
-    do_gigascience   = TRUE,   # run the symbol->ENSEMBL conversion steps
+    do_gigascience   = FALSE,   # run the symbol->ENSEMBL conversion steps
     gigascience_symbol_dir = file.path(out_dir, "symbol"),
     counts_filename  = "pair_counts_summary.tsv"  # <- new: name of the summary table
 ) {
