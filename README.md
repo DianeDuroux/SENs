@@ -3,7 +3,7 @@ This repository contains code to reproduce the results from **"Turning heterogen
 
 The pipeline includes:
 
-1. Selecting significant gene pairs 
+1. Selecting significant gene pairs identified by each epistasis detection method
 2. Clustering the epistasis networks with netANOVA  
 3. Visualizing protocol-specific networks  
 4. Building aggregated networks and comparing them
@@ -12,7 +12,7 @@ The pipeline includes:
 
 
 ## 📁 Data
-The data/ folder in this repository contains the outcomes of the different epistasis detection methods.
+The data/ folder in this repository contains the outcomes of the different epistasis detection methods applied to the IBD dataset from the International Inflammatory Bowel Disease Genetics Consortium (IIBDGC)
 
 
 ## 🚀 Usage
