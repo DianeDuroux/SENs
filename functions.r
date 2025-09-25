@@ -264,13 +264,13 @@ select_significant_pairs <- function(
   # antEpiSeeker (p < p_cutoff)
   # ------------------------------
   filter_pairs(
-    .fpath("v1/antEpiSeeker_filteredhla_LD_selfInteraction_gene.txt"),
+    .fpath("antEpiSeeker_filteredhla_LD_selfInteraction_gene.txt"),
     c("gene1","gene2","p"),
     function(d) d$p < p_cutoff,
     .opath("antEpiSeeker_filteredhla_LD_selfInteraction_gene_score.txt")
   )
   filter_pairs(
-    .fpath("v1/antEpiSeeker_unfilteredhla_LD_selfInteraction_gene.txt"),
+    .fpath("antEpiSeeker_unfilteredhla_LD_selfInteraction_gene.txt"),
     c("gene1","gene2","p"),
     function(d) d$p < p_cutoff,
     .opath("antEpiSeeker_unfilteredhla_LD_selfInteraction_gene_score.txt")
