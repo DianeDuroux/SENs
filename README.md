@@ -43,7 +43,7 @@ res <- run_netanova_pipeline(
 
 # 3) Plot the SENs
 plot_protocol_networks(
-  in_dir   = "results/significance/Gene/ensembl",
+  in_dir   = "results/significance/Gene/",
   pattern  = "*.txt",
   seed     = 1,
   name_map = NULL,   # optionally supply custom names for protocols
