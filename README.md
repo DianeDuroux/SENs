@@ -96,7 +96,7 @@ Make sure that you have [docker](https://www.docker.com/) installed:
 In Linux/macOS/WSL:
 
 ```bash
-docker run --rm federicomelograna/sens-pipeline \
+docker run --rm federicomelograna/sens-pipeline 
 ```
 Or in powershell: 
  ```
