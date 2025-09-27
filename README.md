@@ -43,7 +43,7 @@ res <- run_netanova_pipeline(
 
 # 3) Plot the SENs
 plot_protocol_networks(
-  in_dir   = "results/significance/Gene/ensembl",
+  in_dir   = "results/significance/Gene/",
   pattern  = "*.txt",
   seed     = 1,
   name_map = NULL,   # optionally supply custom names for protocols
@@ -52,7 +52,7 @@ plot_protocol_networks(
 
 # 4) Aggregated networks (Union, Intersection, LCA)
 res <- aggregate_and_compare_networks(
-  clustering_file     = "results/netANOVA/netANOVAClustering_deltaCon_gigascience.txt",
+  clustering_file     = "results/netANOVA/netANOVAClustering_deltaCon_SENs.txt",
   sig_folder          = "results/significance/Gene",
   pattern             = "\\.txt$",
   nclass              = 2,
@@ -61,6 +61,9 @@ res <- aggregate_and_compare_networks(
   out_lca_symbol_file = "results/aggregated_network/lca_symbol_pairs.txt"
 )
 ```
+
+
+
 
 
 ## 📊 Outputs
@@ -73,4 +76,30 @@ The pipeline generates the following outputs:
 - results/plots/: Protocol-specific SEN visualizations
 
 - results/aggregated_network/: network plots
+
+
+The run_pipeline.R file runs the abovementioned pipeline as is the default code in the Docker implementation. 
+
+
+## Docker
+
+Make sure that you have [docker](https://www.docker.com/) installed:
+
+### Pull the Docker image
+ ```bash 
+ docker pull federicomelograna/sens-pipeline:latest
+```
+
+
+### Run the docker
+
+In Linux/macOS/WSL:
+
+```bash
+docker run --rm federicomelograna/sens-pipeline \
+```
+Or in powershell: 
+ ```
+powershell docker run --rm federicomelograna/sens-pipeline
+ ```
 
