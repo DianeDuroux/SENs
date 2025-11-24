@@ -1,0 +1,8 @@
+index_i,index_j,SNP1_rs_id,SNP2_rs_id,effect
+3,4,rs10492963,rs11801629,joint-dominant
+5,6,rs16837624,rs6693450,exponential
+7,8,rs4653522,rs6576939,multiplicative
+9,10,rs10489136,rs6702469,joint-recessive
+1,2,rs1876839,rs17130482,triplet
+1,10,rs1876839,rs6702469,triplet
+2,10,rs17130482,rs6702469,triplet
